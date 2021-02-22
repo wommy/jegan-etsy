@@ -1,0 +1,50 @@
+---js
+{
+	layout: "Base",
+	lighter: [
+		{
+			name: "art lighter",
+			imgs: [
+				"https://i.etsystatic.com/17972346/d/il/d4572e/2249086584/il_340x270.2249086584_mr9a.jpg?version=0",
+				"https://i.etsystatic.com/17972346/r/il/d4572e/2249086584/il_1588xN.2249086584_mr9a.jpg",
+				"https://i.etsystatic.com/17972346/r/il/1ef787/2342551019/il_794xN.2342551019_mk65.jpg",
+				"https://i.etsystatic.com/17972346/r/il/cef610/2342551115/il_794xN.2342551115_d76d.jpg",
+			],
+			price: 10
+		},
+		{
+			name: "skull lighter",
+			imgs: [
+				"https://i.etsystatic.com/17972346/d/il/9ea0c8/2249086090/il_340x270.2249086090_44az.jpg?version=0",
+			],
+			price: 10
+		},
+		{
+			name: "skull butterfly art lighter",
+			imgs: [
+				"https://i.etsystatic.com/17972346/d/il/e2ccee/2103492181/il_340x270.2103492181_64mi.jpg?version=0",
+			],
+			price: 10
+		},
+		{
+			name: "aquarius zodiac lighter",
+			imgs: [
+				"https://i.etsystatic.com/17972346/d/il/6d0949/2249113718/il_340x270.2249113718_bvs7.jpg?version=0",
+			],
+			price: 10
+		}
+	]
+}
+---
+<div class="w-5/6 mx-auto">
+	<h1>jegan mones etsy port</h1>
+	<main class="grid grid-cols-4">
+		{%- for ea in lighter %}
+		<div class="p-2">
+			<img src="{{ ea.imgs | first }}" alt="{{ ea.name }}">
+			<h4 class="m-0 font-normal">{{ ea.name }}</h4>
+			<p class="m-0 font-semibold">${{ ea.price }}.00</p>
+		</div>
+		{%- endfor %}
+	</main>
+</div>

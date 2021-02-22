@@ -1,0 +1,20 @@
+{
+  "name": "jegan-etsy",
+  "version": "1.0.0",
+  "description": "porting jegan's etsy",
+  "main": "index.js",
+  "repository": "git@github.com:wommy/jegan-etsy.git",
+  "author": "wommy <tom@technomad.media>",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.1",
+    "autoprefixer": "^10.2.4",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.0",
+    "sanitize.css": "^12.0.1",
+    "tailwindcss": "^2.0.3"
+  },
+  "scripts": {
+    "css": "postcss post.css -o 11ty/css/style.css"
+  }
+}
